@@ -1,0 +1,20 @@
+<div class="product-list__content section">
+    <div class="title">
+        <h2 class="title-heading">{{heading}}</h2>
+        <p class="title-des">{{desc}}</p>
+    </div>
+
+    <div (click)="  changeProductList(false) " [hidden]="showAll" class="product-slider product-slider-left "><i
+            class="fa fa-arrow-left"></i></div>
+    <div class="product-list container">
+        <div class="row">
+            <app-product-item *ngFor="let item of eachCategoryList" [productItem]="item" class="col-3">
+            </app-product-item>
+        </div>
+    </div>
+    <div (click)="changeProductList(true)" [hidden]="showAll" class="product-slider product-slider-right"><i
+            class="fa fa-arrow-right"></i></div>
+    <button class="btn btn-list product-list__btn" (click)="toggleAllProduct()">{{!showAll ? "View All" :
+        "See Details"}}</button>
+    <div class="horizontal-line"></div>
+</div>

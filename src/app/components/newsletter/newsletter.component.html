@@ -1,0 +1,15 @@
+<div class="newsletter section">
+    <div class="title">
+        <h2 class="title-heading">
+            Today’s news
+        </h2>
+        <p class="title-des">Press releases and multimedia.</p>
+    </div>
+    <div class="newsletter-list container">
+        <div class="row">
+            <app-product-item [productItem]="news" *ngFor="let news of newsList" class="col-4"></app-product-item>
+        </div>
+    </div>
+    <button class="btn btn-list">READ NEWS</button>
+    <div class="horizontal-line"></div>
+</div>

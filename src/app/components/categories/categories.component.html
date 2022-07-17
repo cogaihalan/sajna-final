@@ -1,0 +1,25 @@
+<div class=" container categories section">
+    <div class="row ">
+        <div class="col-3  " *ngFor="let item of categoriesProduct">
+            <div class="category">
+                <h3 class="category-heading">{{item.title}}</h3>
+                <h4 class="category-subheading">{{item.subtitle}}</h4>
+                <div class="category-list">
+                    <div class="category-list-row" *ngFor="let product of item.list">
+                        <div class="category-item__img">
+                            <img src={{product.image}} alt="" class="img-fluid">
+                        </div>
+                        <div class="category-item">
+                            <p class="category-item__name">{{product.name}}</p>
+                            <p class="category-item__price">{{product.price}}</p>
+                        </div>
+
+                    </div>
+                </div>
+                <button class="btn btn-more">Shop Now</button>
+            </div>
+        </div>
+
+
+    </div>
+</div>

@@ -1,0 +1,36 @@
+.footer {
+  &-brand {
+    &::before {
+      content: ".";
+      color: #edc59d;
+      position: absolute;
+      left: 40%;
+    }
+  }
+  &-heading {
+    font-size: 1.5625rem;
+    color: #222;
+    font-weight: 400;
+    margin-bottom: 17px;
+  }
+  &-copyright {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #646464;
+  }
+  &-item {
+    margin-bottom: 1rem;
+    a {
+      font-size: 1rem;
+      font-weight: 300;
+      color: #646464;
+    }
+  }
+  .horizontal-line {
+    margin: 55px 0;
+  }
+}
+.footer.section {
+  padding-bottom: 3rem;
+}

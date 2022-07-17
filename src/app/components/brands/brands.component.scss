@@ -1,0 +1,14 @@
+.brands {
+  &-title {
+    text-transform: unset;
+    font-size: 3.4rem;
+    margin-bottom: 67px;
+  }
+  &-list {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}

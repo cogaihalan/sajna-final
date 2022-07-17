@@ -1,0 +1,47 @@
+.categories {
+  .category {
+    &-heading {
+      @include styleText($black-dark, 2.25rem, $fw-400);
+      line-height: 2.25;
+      text-transform: capitalize;
+    }
+    &-subheading {
+      @include styleText($color-text, 1rem, $fw-300);
+      margin-bottom: 40px;
+    }
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.75rem;
+    }
+    &-list-row {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      .category-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-transform: capitalize;
+        gap: 1rem;
+        &__img {
+          img {
+            height: 70px;
+            width: 70px;
+            display: block;
+            border-radius: 50%;
+          }
+        }
+        &__name {
+          margin-bottom: 0;
+          @include styleText($black-dark, 1rem, $fw-500);
+        }
+        &__price {
+          margin-right: auto;
+          @include styleText($brown-1, 1.625rem, $fw-300);
+        }
+      }
+    }
+  }
+}

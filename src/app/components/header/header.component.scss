@@ -1,0 +1,19 @@
+.header {
+  padding-top: 64px;
+  width: 100%;
+  &-brand {
+    position: relative;
+    &::before {
+      content: ".";
+      color: #edc59d;
+      position: absolute;
+      right: -8px;
+    }
+  }
+  &-menu {
+    img {
+      width: 22px;
+      height: 14px;
+    }
+  }
+}

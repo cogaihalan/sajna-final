@@ -1,0 +1,24 @@
+<div class="container section">
+    <div class="features">
+        <div class="row features-content">
+            <div class="col-6" *ngFor="let feature of featuresList">
+
+                <div class="feature ">
+                    <div class="feature-icon">
+                        <i class={{feature.icon}}></i>
+                    </div>
+                    <div class="feature-info">
+                        <p class="feature-heading">
+                            {{feature.name}}
+                        </p>
+                        <p class="feature-desc">
+                            {{feature.desc}}
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>

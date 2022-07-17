@@ -1,0 +1,57 @@
+@import "../../../assets/scss/Helpers/mixin";
+@import "../../../assets/scss/Helpers/variables";
+.wrapper {
+  background-color: #fffcf9;
+}
+.billboard {
+  &-content {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  &-img {
+    width: 700px;
+    height: 876px;
+    img {
+      position: absolute;
+    }
+  }
+  &-info {
+    width: 50%;
+    margin-left: 6px;
+  }
+  &-subheading {
+    @include styleText($brown-subheading, 1.125rem, $fw-400);
+    line-height: 27px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    display: flex;
+    gap: 24px;
+    align-items: center;
+  }
+  &-heading {
+    margin: 60px 0 40px;
+    @include styleText($black-darker, 6.5rem, $fw-700);
+    white-space: nowrap;
+  }
+  &-desc {
+    width: 70%;
+    @include styleText($brown-text, 1rem, $fw-300);
+    line-height: 2.25;
+    margin-bottom: 70px;
+  }
+  &-nav {
+    position: absolute;
+    right: -4%;
+    bottom: 15%;
+    transform: rotate(-90deg);
+    @include styleText($brown-button, 0.875rem, $fw-400);
+    line-height: 1.2;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+  }
+}
+

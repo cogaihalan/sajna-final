@@ -1,0 +1,42 @@
+.btn {
+  line-height: 1.35;
+  padding: 22px 56px;
+  border-radius: 0;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.btn-main {
+  @include styleButton($white, $brown-button, 1.125rem, $fw-500);
+  &:hover {
+    @include styleButton($brown-button, $white, 1.125rem, $fw-500);
+    border: 1px solid $brown-button;
+  }
+}
+.btn-list {
+  margin-top: 70px;
+  border-radius: 100rem;
+  @include styleButton($black-dark, $white, 1.125rem, $fw-500);
+  border: 1px solid $gray-border;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.btn-more {
+  margin-top: 20px;
+  @include styleText($black-dark, 1rem, $fw-500);
+  position: relative;
+  text-transform: uppercase;
+  padding-left: 0;
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background-color: $black-darker;
+  }
+}
+.btn-more--w400 {
+  font-weight: 400;
+}

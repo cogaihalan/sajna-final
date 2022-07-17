@@ -1,0 +1,108 @@
+.brand {
+  font-family: $font-brand;
+  @include styleText($black-darker, 3.25rem, $fw-400);
+  position: relative;
+}
+.title {
+  text-align: center;
+  &-heading {
+    @include styleText($black-dark, 4.25rem, $fw-400);
+    margin-bottom: 7px;
+    text-transform: capitalize;
+  }
+  &-des {
+    @include styleText($color-text, 1.0625rem, $fw-300);
+    margin-bottom: 60px;
+  }
+}
+.card {
+  border: none;
+  background-color: transparent;
+}
+.line {
+  width: 69px;
+  height: 1px;
+  background-color: #f0d0b3;
+}
+.horizontal-line {
+  width: 100%;
+  margin-top: 100px;
+  height: 1px;
+  background-color: #dfdfdf;
+}
+.quote {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+  text-transform: capitalize;
+  @include styleText($black-dark, 3rem, $fw-600);
+  margin-bottom: 5rem;
+}
+
+.active {
+  position: relative;
+  display: inline-block;
+  z-index: 2;
+  &::after {
+    content: "";
+    z-index: 1;
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    bottom: 12px;
+    background-color: $brown-subheading;
+    opacity: 0.6;
+  }
+}
+.wrapper {
+  background-color: #fffcf9;
+}
+
+.container {
+  max-width: 1200px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#navbarNav {
+  gap: 2.5rem;
+}
+.navbar {
+  .container {
+    align-items: unset;
+  }
+  .navbar-nav {
+    margin-left: auto;
+    margin-right: 1rem;
+    gap: 8px;
+    .nav-item {
+      padding: 0.5rem 1rem;
+    }
+    .nav-link {
+      @include styleText($black-navbar, 1rem, $fw-400);
+    }
+  }
+}
+
+.circle-pattern {
+  width: 600px;
+  height: 600px;
+  background-color: transparent;
+  border: 1px solid #fcefe3;
+  border-radius: 50%;
+  position: absolute;
+  left: -6%;
+  &::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    content: "";
+    width: 400px;
+    height: 400px;
+    background-color: #fff6ee;
+    border-radius: 50%;
+  }
+}

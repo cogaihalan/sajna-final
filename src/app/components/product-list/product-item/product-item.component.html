@@ -1,0 +1,18 @@
+<div class="card product-item ">
+    <div class="product-item__image">
+
+        <img src={{productItem.image}} class="card-img-top  img-fluid" alt={{productItem.description}}>
+        <div class="product-item__icon">
+            <i class="fa fa-heart"></i>
+        </div>
+    </div>
+    <div class="card-body">
+        <p class="product-item__category">{{productItem.category}}</p>
+        <p class="product-item__title">
+            {{productItem.title}}
+        </p>
+        <p class="product-item__price"> {{productItem.price ? "$" :""}} {{productItem.price}}</p>
+        <p [hidden]="productItem.price" class="product-item__description">{{productItem.description}}</p>
+        <button [hidden]="productItem.price" class="btn btn-more btn-more--w400">Read More </button>
+    </div>
+</div>

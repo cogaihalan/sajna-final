@@ -1,0 +1,80 @@
+@import "../../../assets/scss/Helpers/mixin";
+@import "../../../assets/scss/Helpers/variables";
+.banner {
+  &-content {
+    position: relative;
+  }
+  &-image {
+    background: url("../../../assets/imgs/banner2.jpeg");
+    height: 950px;
+    background-position: left 45% top 42%;
+  }
+  &-slider {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #5e5e5e;
+    cursor: pointer;
+    font-size: 2.5rem;
+    &__right {
+      right: 36px;
+    }
+    &__left {
+      left: 36px;
+    }
+  }
+  &-dots {
+    display: flex;
+    position: absolute;
+    right: 5%;
+    bottom: 5%;
+    gap: 26px;
+    cursor: pointer;
+    .dot-active {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: block;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: 1px solid #5e5e5e;
+      }
+    }
+    .banner-dot {
+      position: relative;
+      width: 8px;
+      height: 8px;
+      background-color: $black-darker;
+      border-radius: 50%;
+    }
+  }
+  &-info {
+    position: absolute;
+    width: 45%;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    .btn {
+      &-main {
+        border: 1px solid #717171;
+        color: $black-darker;
+        background-color: transparent;
+        padding: 22px 40px;
+      }
+    }
+  }
+  &_subtitle {
+    text-transform: uppercase;
+    @include styleText($black-darker, 1.375rem, $fw-500);
+  }
+  &_title {
+    margin: 34px 0 68px;
+    text-transform: uppercase;
+    line-height: 87px;
+    @include styleText($black-darker, 3.5rem, $fw-500);
+  }
+}
