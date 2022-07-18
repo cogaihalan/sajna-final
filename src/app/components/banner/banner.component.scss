@@ -5,9 +5,9 @@
     position: relative;
   }
   &-image {
-    background: url("../../../assets/imgs/banner2.jpeg");
-    height: 950px;
-    background-position: left 45% top 42%;
+    background: url("../../../assets/imgs/background/banner2.jpeg") center/cover
+      no-repeat;
+    height: 850px;
   }
   &-slider {
     position: absolute;

@@ -7,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BrandsComponent implements OnInit {
   listBrand = [
-    '../../../assets/imgs/sponsor1.png',
-    '../../../assets/imgs/sponsor2.png',
-    '../../../assets/imgs/sponsor3.png',
-    '../../../assets/imgs/sponsor4.png',
-    '../../../assets/imgs/sponsor5.png',
-    '../../../assets/imgs/sponsor6.png',
-    '../../../assets/imgs/sponsor7.png',
-    '../../../assets/imgs/sponsor8.png',
-    '../../../assets/imgs/sponsor9.png',
-    '../../../assets/imgs/sponsor10.png',
-    '../../../assets/imgs/sponsor11.png',
+    '../../../assets/imgs/brands/sponsor1.png',
+    '../../../assets/imgs/brands/sponsor2.png',
+    '../../../assets/imgs/brands/sponsor3.png',
+    '../../../assets/imgs/brands/sponsor4.png',
+    '../../../assets/imgs/brands/sponsor5.png',
+    '../../../assets/imgs/brands/sponsor6.png',
+    '../../../assets/imgs/brands/sponsor7.png',
+    '../../../assets/imgs/brands/sponsor8.png',
+    '../../../assets/imgs/brands/sponsor9.png',
+    '../../../assets/imgs/brands/sponsor10.png',
+    '../../../assets/imgs/brands/sponsor11.png',
   ];
   constructor() {}
 
